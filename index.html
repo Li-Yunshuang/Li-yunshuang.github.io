@@ -42,10 +42,6 @@
             font-family: "Times New Roman", Times, serif; /* Different font for the centered text */
         }
   </style>
-  <head>
-    <!-- Import Comfortaa -->
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
-  </head>
   <body>
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
@@ -53,19 +49,22 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p class="name" style="text-align: center; font-size: 32px; font-family: 'Comfortaa', sans-serif; font-weight: 700;">
-                Yunshuang Li
-              </p>
-                <p>I am a first-year Ph.D. student in Computer Science at University of Southern California, where I work with <a href="https://danielseita.github.io/">Prof. Daniel Seita</a> and <a href="https://uscresl.org/principal-investigator/">Prof. Gaurav Sukhatme</a>. I am interested in robot learning for general-purpose robot manipulation.
+                <p class="name" style="text-align: center; font-size: 32px; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-weight: 700;">
+                  Yunshuang Li
+                </p>
+                <p>Hello world!
                 </p>
                 <p>
-                  I earned a M.S. degree in Robotics at <a href="https://www.grasp.upenn.edu/">GRASP Lab</a>, University of Pennsyvania in May 2024. I was a member of Perception, Action, & Learnin (PAL) Research Group, advised by <a href="https://www.seas.upenn.edu/~dineshj/">Prof. Dinesh Jayaraman</a>. Previoulsy, I worked with <a href="https://www.cse.cuhk.edu.hk/~qdou/index.html">Prof. Qi Dou</a> at Chinese University of Hong Kong (CUHK) for an internship. I received my Honorable B.S. degree in Automation from <a href="http://ckc.zju.edu.cn/ckcen/">Chu Kochen Honors College</a>, Zhejiang University in 2022.
+                  I am a second-year Ph.D. student in Computer Science at University of Southern California, where I am co-advised by <a href="https://danielseita.github.io/">Prof. Daniel Seita</a> and <a href="https://uscresl.org/principal-investigator/">Prof. Gaurav Sukhatme</a>.
+                </p>
+                <p>
+                  I received a M.S. degree in Robotics at University of Pennsyvania in May 2024. I was a member of <a href="https://www.seas.upenn.edu/~dineshj/pennpal/index.html">Perception, Action, & Learnin (PAL) Research Group</a>, advised by <a href="https://www.seas.upenn.edu/~dineshj/">Prof. Dinesh Jayaraman</a>. Previoulsy, I worked with <a href="https://www.cse.cuhk.edu.hk/~qdou/index.html">Prof. Qi Dou</a> at Chinese University of Hong Kong as an undergard researcher. I received my Honorable B.S. degree in Automatic Control from <a href="http://ckc.zju.edu.cn/ckcen/">Chu Kochen Honors College</a>, Zhejiang University in 2022.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:yunshuan@usc.edu">Email</a> &nbsp;/&nbsp;
                   <a href="data/Yunshuang_Li_CV.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="data/Yunshuang-bio.txt">Bio</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?user=fpx2AWYAAAAJ&hl=en&oi=ao">Google Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/yunshuang-li-166034293/">LinkedIn</a> &nbsp;/&nbsp;
                   <a href="https://twitter.com/YunshuangL">Twitter</a>
                 </p>
               </td>
@@ -74,26 +73,195 @@
               </td>
             </tr>
           </tbody></table>
+          <hr style="border: none; border-top: 1px solid #ca0783; margin: 0px 0;">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
+                <h2 class="name" style="font-size: 24px; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-weight: 300;">
+                  Research</h2>
                 <p>
-                  My research interests lie in robot learning for general-purpose robot manipulation. During my PhD study, I would like to focus on learning for robot manipulation, exploring topics such as representation learning and policy learning.
-                  My ultimate goal is to enable robots to manipulate and learn to manipulate like humans.
+                  I'm interested in learning for dexterous robot manipulation. In particular, my research focuses on exploring whole-body, multifunctional, and long-horizon use cases of robots.
+                  My ultimate goal is to advance robotic manipulation toward human-level dexterity, enabling robots to learn and adapt effectively.
                 </p>
-
                 <p>
                   (* indicates equal contribution, † indicates equal advising)
                 </p>
               </td>
             </tr>
           </tbody></table>
-      
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-           
+            <tr onmouseout="GDP2_stop()" onmouseover="GDP2_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div style="
+                margin-top:1px;
+                background-color:#ca0783; 
+                color:white; 
+                padding:1px 12px; 
+                border-radius:7px; 
+                text-align:center;
+                font-size:14px;">
+              <em>In Submission</em>
+              </div>
+                <div class="one">
+                  <div class="two" id='GDP2'>
+                    <video  width=100% height=100% muted autoplay loop>
+                    <source src="images/GDP2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                  <img src='images/GDP2.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function GDP2_start(){
+                    document.getElementById('GDP2').style.opacity = "1";
+                  }
+  
+                  function GDP2_stop() {
+                    document.getElementById('GDP2').style.opacity = "0";
+                  }
+                  GDP2_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://dexnoma.github.io/">
+                  <span class="papertitle">Learning Geometry-Aware Dexterous Manipulation in Pushing and Pulling</span>
+                </a>
+                <br>
+                <a class="myself"><strong>Yunshuang Li</strong></a>,
+                <a href="https://yiyang0207.github.io/" class="black-link">Yiyang Ling</a>,
+                <a href="https://uscresl.org/principal-investigator/" class="black-link">Gaurav Sukhatme</a><sup>&dagger;</sup>,
+                <a href="ttps://danielseita.github.io/" class="black-link">Daniel Seita</a><sup>&dagger;</sup>
+                <br>
+                <em>In Submission</em>
+                <br>
+                <a href="">arXiv</a>
+                /
+                <a href="">project page</a>
+                /
+                <a href="" >video</a>
+                /
+                <a href="" >code</a>
+                <p>We propose Geometry-aware Dexterous Pushing and Pulling, a method for
+                  nonprehensile manipulation which frames the problem as
+                  synthesizing and learning pre-contact dexterous hand poses that
+                  lead to effective pushing and pulling. </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="hodor_stop()" onmouseover="hodor_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div style="
+                margin-top:1px;
+                background-color:#ca0783; 
+                color:white; 
+                padding:1px 12px; 
+                border-radius:7px; 
+                text-align:center;
+                font-size:14px;">
+              CoRL
+              </div>
+                <div class="one">
+                  <div class="two" id='hodor'>
+                    <video  width=100% height=100% muted autoplay loop>
+                    <source src="images/hodor.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                  <img src='images/hodor.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function hodor_start(){
+                    document.getElementById('hodor').style.opacity = "1";
+                  }
+  
+                  function hodor_stop() {
+                    document.getElementById('hodor').style.opacity = "0";
+                  }
+                  hodor_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://sites.google.com/view/hodor-corl24">
+                  <span class="papertitle">Task-Oriented Hierarchical Object Decomposition for Visuomotor Control</span>
+                </a>
+                <br>
+                Jianing Qian,
+                <a class="myself"><strong>Yunshuang Li</strong></a>,
+                <a href="https://bucherb.github.io/" class="black-link">Bernadette Bucher</a>,
+                <a href="https://www.seas.upenn.edu/~dineshj/" class="black-link">Dinesh Jayaraman</a>
+                <br>
+                <em>Conference on Robot Learning (CoRL), 2024</em>
+                <br>
+                <a href="https://arxiv.org/abs/2411.01284">arXiv</a>
+                /
+                <a href="https://sites.google.com/view/hodor-corl24">project page</a>
+                /
+                <a href="https://drive.google.com/file/d/1Ixt3LBgxuSdp3g5lp2VNskAuaTH6Vc-Z/view" >video</a>
+                /
+                <a href= >code</a>
+                <p>We propose to train a large combinatorial family of representations organized by scene entities. This hierarchical object decomposition for task-oriented representations permits selectively assembling different representations specific to each task while scaling in representational capacity with the complexity of the scene and the task.</p>
+              </td>
+            </tr>
+
+            <tr onmouseout="DROID_stop()" onmouseover="DROID_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div style="
+                margin-top:1px;
+                background-color:#ca0783; 
+                color:white; 
+                padding:1px 12px; 
+                border-radius:7px; 
+                text-align:center;
+                font-size:14px;">
+              RSS
+              </div>
+                <div class="one">
+                  <div class="two" id='DROID'>
+                    <video  width=100% height=100% muted autoplay loop>
+                    <source src=" " type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                  <img src='images/droid.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function DROID_start(){
+                    document.getElementById('Open').style.opacity = "1";
+                  }
+  
+                  function DROID_stop() {
+                    document.getElementById('Open').style.opacity = "0";
+                  }
+                  DROID_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://droid-dataset.github.io/">
+                  <span class="papertitle">DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset</span>
+                </a>
+                <br>
+                DROID Dataset Team
+                <br>
+                <em> Robotics: Science and Systems (RSS), 2024<b></b></em>
+                <br>
+                <a href="https://arxiv.org/abs/2403.12945">arXiv</a>
+                /
+                <a href="https://droid-dataset.github.io/">project page</a>
+                /
+                <a href="https://droid-dataset.github.io/videos/droid_teaser_animated.mp4">video</a>
+                <p></p>
+              </td>
+            </tr>
+
             <tr onmouseout="UVD_stop()" onmouseover="UVD_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
+                <div style="
+                margin-top:1px;
+                background-color:#ca0783; 
+                color:white; 
+                padding:1px 12px; 
+                border-radius:7px; 
+                text-align:center;
+                font-size:14px;">
+              ICRA
+              </div>
                 <div class="one">
                   <div class="two" id='UVD'>
                     <video  width=100% height=100% muted autoplay loop>
@@ -126,9 +294,9 @@
                 <a href="https://www.seas.upenn.edu/~jasonyma/" class="black-link">Yecheng Jason Ma</a><sup>&dagger;</sup>,
                 <a href="https://lucaweihs.github.io" class="black-link">Luca Weihs</a><sup>&dagger;</sup>
                 <br>
-                <em> <a href="https://leap-workshop.github.io/" class="black-link">Learning Effective Abstractions for Planning (LEAP)</a> worshop, CoRL <b>(oral, Best paper award)</b>, 2023</em> <br>
-                <em> <a href="https://sites.google.com/view/fmdm-neurips23/" class="black-link">Foundation Models for Decision Making (FMDM)</a> worshop, NeurIPS <b>(oral, 6/112)</b>, 2023</em> <br>
-                <em>International Conference on Robotics and Automation (ICRA), Best Computer Vision Paper Finalist, 2024</em>
+                <em> <a href="https://leap-workshop.github.io/" class="black-link">LEAP worshop</a> @ CoRL 2023<b> (Oral, Best paper award)</b> </em> <br>
+                <em> <a href="https://sites.google.com/view/fmdm-neurips23/" class="black-link">FMDM worshop</a> @ NeurIPS 2023 <b>(Oral, 6/112)</b></em> <br>
+                <em> International Conference on Robotics and Automation (ICRA) 2024 <b>(Best Computer Vision Paper Finalist)</b></em>
                 <br>
                 <a href="https://arxiv.org/abs/2310.08581">arXiv</a>
                 /
@@ -138,14 +306,72 @@
                 /
                 <a href="https://github.com/zcczhang/UVD/">code</a>
                 <p></p>
-                <p>
-                  We present Universal Visual Decomposer, an *off-the-shelf* task decomposition method that effectively produces semantically meaning subgoals across both simulated and real-robot environments for long-horizon visual manipulation tasks, without any task-specific knowledge or training. UVD discovered subgoals enable effective reward shaping for solving challenging multi-stage tasks using RL, and policies trained with IL exhibit significantly superior compositional generalization at test time.
-                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="Open_stop()" onmouseover="Open_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div style="
+                margin-top:1px;
+                background-color:#ca0783; 
+                color:white; 
+                padding:1px 12px; 
+                border-radius:7px; 
+                text-align:center;
+                font-size:14px;">
+              ICRA
+              </div>
+                <div class="one">
+                  <div class="two" id='Open'>
+                    <video  width=100% height=100% muted autoplay loop>
+                    <source src=" " type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                  <img src='images/open.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function Open_start(){
+                    document.getElementById('Open').style.opacity = "1";
+                  }
+  
+                  function Open_stop() {
+                    document.getElementById('Open').style.opacity = "0";
+                  }
+                  Open_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://robotics-transformer-x.github.io/">
+                  <span class="papertitle">Open X-Embodiment: Robotic Learning Datasets and RT-X Models</span>
+                </a>
+                <br>
+                Open X-Embodiment Team
+                <br>
+                <em> International Conference on Robotics and Automation (ICRA) 2024 <b>(Best Conference Paper Award)</b></em>
+                <br>
+                <a href="https://arxiv.org/abs/2310.08864">arXiv</a>
+                /
+                <a href="https://robotics-transformer-x.github.io/">project page</a>
+                /
+                <a href="https://robotics-transformer-x.github.io/video/teaser_compressed.mp4">video</a>
+                /
+                <a href="https://github.com/google-deepmind/open_x_embodiment">code</a>
+                <p></p>
               </td>
             </tr>
 
             <tr onmouseout="im2contact_stop()" onmouseover="im2contact_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
+              <div style="
+                margin-top:1px;
+                background-color:#ca0783; 
+                color:white; 
+                padding:1px 12px; 
+                border-radius:7px; 
+                text-align:center;
+                font-size:14px;">
+              CoRL
+              </div>
               <div class="one">
                 <div class="two" id='im2contact'>
                   <video  width=100% height=100% muted autoplay loop>
@@ -186,13 +412,23 @@
               <a href="https://sites.google.com/view/im2contact/home">code</a>
               <p></p>
               <p>
-                We propose a challenging vision-based extrinsic contact localization task: with only a single RGB-D camera view of a robot workspace, identify when and where an object held by the robot contacts the rest of the environment. Our final approach im2contact demonstrates the promise of versatile general-purpose contact perception from vision alone, performing well for localizing various contact types (point, line, or planar; sticking, sliding, or rolling; single or multiple), and even under occlusions in its camera view.
+                We propose a challenging vision-based extrinsic contact localization task: with only a single RGB-D camera view of a robot workspace, identify when and where an object held by the robot contacts the rest of the environment. 
               </p>
             </td>
           </tr>
 
             <tr onmouseout="MICCAI_stop()" onmouseover="MICCAI_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
+                <div style="
+                margin-top:1px;
+                background-color:#ca0783; 
+                color:white; 
+                padding:1px 12px; 
+                border-radius:7px; 
+                text-align:center;
+                font-size:14px;">
+              CMPB
+              </div>
                 <div class="one">
                   <div class="two" id='MICCAI_image'>
                     <img src='images/challenge_after.png' width="160"></div>
@@ -353,33 +589,45 @@
 
           </tbody></table>
           
-          
+          <hr style="border: none; border-top: 1px solid #ca0783; margin: 0px 0;">
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
               <td>
-                <h2>Service</h2>
+                <h2 class="name" style="font-size: 24px; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-weight: 300;">
+                  Service</h2>
                 <p>
-                  <b>Workshop reviewer</b>: NeurIPS, ICRA<br>
-                  <b>CIS 5190</b> Applied Machine Learning: TA in Spring 24 at UPenn.<br>
-                  <b>CIS 5200</b> Machine Learning: TA in Fall 23 at UPenn.<br>
-                  <b><a href="https://github.com/MEAM520" class="black-link">MEAM 5200 Introduction to Robotics</a></b>: TA in Spring 23 at UPenn.<br>
+                  <b>Mentorship</b>: <a herf="https://www.ethanfoong.com/" class="black-link">Ethan Foong</a><br>
+                  <b>Conference reviewer</b>: CoRL<br>
+                  <b>Workshop reviewer</b>: NeurIPS, ICRA, RSS<br>
+                  <b>Teaching Assistant at USC</b>: CSCI 103: Introduction to Programming, Fa25.<br>
+                  <b>Teaching Assistant at UPenn</b>: <a href="https://github.com/MEAM520" class="black-link">MEAM 5200: Introduction to Robotics</a>, Sp23; CIS 5200: Machine Learning, Fa23; CIS 5190, Applied Machine Learning, Sp24.<br>
                   <b><a herf="https://fife.cis.upenn.edu" class="black-link">Fife-Penn Python Club</a></b>: Instructor in Spring 23 at G.W. Carver High School.
                 </p>
               </td>
             </tr>
           </tbody></table>
 
+          <hr style="border: none; border-top: 1px solid #ca0783; margin: 0px 0;">
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
               <td>
-                <h2>Adwards</h2>
+                <h2 class="name" style="font-size: 24px; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-weight: 300;">
+                  Awards</h2>
                 <p>
-                  <b>SEAS MS Outstanding Research Award</b> 2024<br>
-                  <b>President Gutmann Leadership Award</b> administered by GAPSA, UPenn, 2023<br>
+                  <b>----PhD----</b><br>
+                  <b>USC Viterbi School of Engineering Fellowship</b>, 2024<br>
+                  <b>USC WiSE Graduate Top-Off Award</b>(10k$), 2024<br>
+                  <b>CoRL 2024 Travel Grant</b>, 2024<br>
+                  <b>----Master----</b><br>
+                  <b>Best Conference Paper Award</b> ICRA, 2024
+                  <b>UPenn MS Outstanding Research Award</b>, 2024<br>
+                  <b>UPenn President Gutmann Leadership Award</b>, 2023<br>
+                  <b>UPenn Summer Internship Award</b>, 2023<br>
                   <b>Best Paper Award</b> at CoRL LEAP workshop, 2023<br>
                   <b>CoRL 2023 Travel Grant</b>, 2023<br>
-                  <b>Summer Internship Award</b> issued by GAPSA at Penn, 2023<br>
-                  <!-- <b>Chiang Chen Overseas Graduate Fellowship</b> (10 students each year in mainland China, 50k$), 2022<br> -->
+                  <!-- issued by GAPSA at Penn -->
+                  <b>----Undergrad----</b><br>
+                  <b>Chiang Chen Overseas Graduate Fellowship</b> (10 students each year in mainland China, 50k$), 2022<br>
                   <b>Outstanding Graduate</b> of Zhejiang Province issued by Department of Education of Zhejiang Province, 2022<br>
                   <b>National Scholarship</b> issued by the Ministry of Education of PRC, 2021<br>
                   <b>First Prize Scholarship</b> issued by Zhejiang University, 2018-2021
@@ -388,10 +636,12 @@
             </tr>
           </tbody></table>
 
+          <hr style="border: none; border-top: 1px solid #ca0783; margin: 0px 0;">
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
               <td>
-                <h2>Media</h2>
+                <h2 class="name" style="font-size: 24px; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-weight: 300;">
+                  Media</h2>
                 <p>
                   <a herf="https://www.grasp.upenn.edu/news/2024-seas-graduate-awards-ceremony/" class="black-link">The 2024 SEAS Graduate Awards Ceremony Spotlight</a>
                 </p>
