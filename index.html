@@ -55,7 +55,7 @@
                 <p>Hello world!
                 </p>
                 <p>
-                  I am a second-year Ph.D. student in Computer Science at the University of Southern California, where I am co-advised by <a href="https://danielseita.github.io/">Prof. Daniel Seita</a> and <a href="https://uscresl.org/principal-investigator/">Prof. Gaurav Sukhatme</a>.
+                  I am a third-year Ph.D. student in Computer Science at the University of Southern California, where I am co-advised by <a href="https://danielseita.github.io/">Prof. Daniel Seita</a> and <a href="https://uscresl.org/principal-investigator/">Prof. Gaurav Sukhatme</a>.
                 </p>
                 <p>
                   I received an M.S. degree in Robotics at the University of Pennsylvania in May 2024. I was a member of the <a href="https://www.seas.upenn.edu/~dineshj/pennpal/index.html">Perception, Action, & Learning (PAL) Research Group</a>, advised by <a href="https://www.seas.upenn.edu/~dineshj/">Prof. Dinesh Jayaraman</a>. Previously, I worked with <a href="https://www.cse.cuhk.edu.hk/~qdou/index.html">Prof. Qi Dou</a> at the Chinese University of Hong Kong as an undergrad researcher. I received my Honorable B.S. degree in Automatic Control from <a href="http://ckc.zju.edu.cn/ckcen/">Chu Kochen Honors College</a>, Zhejiang University in 2022.
@@ -90,6 +90,61 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="HANDFUL_stop()" onmouseover="HANDFUL_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div style="
+                margin-top:1px;
+                background-color:#ca0783; 
+                color:white; 
+                padding:1px 12px; 
+                border-radius:7px; 
+                text-align:center;
+                font-size:14px;">
+              IROS
+              </div>
+                <div class="one">
+                  <div class="two" id='HANDFUL'>
+                    <video width=100% height=100% muted autoplay loop playsinline style="width:100%; height:100%; object-fit: cover; object-position: center;">
+                    <source src="https://ethan-foong.github.io/images/HANDFUL_Video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                  <img src='https://ethan-foong.github.io/images/benchmark_v3%20(1)-1.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function HANDFUL_start(){
+                    document.getElementById('HANDFUL').style.opacity = "1";
+                  }
+  
+                  function HANDFUL_stop() {
+                    document.getElementById('HANDFUL').style.opacity = "0";
+                  }
+                  HANDFUL_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://handful-dex.github.io/">
+                  <span class="papertitle">HANDFUL: Sequential Grasp-Conditioned Dexterous Manipulation with Resource Awareness</span>
+                </a>
+                <br>
+                <a href="https://ethan-foong.github.io/" class="black-link">Ethan Foong</a>*,
+                <a class="myself"><strong>Yunshuang Li</strong></a>*,
+                <a href="https://haojiang4400.github.io/" class="black-link">Hao Jiang</a>,
+                <a href="https://uscresl.org/principal-investigator/" class="black-link">Gaurav Sukhatme</a>,
+                <a href="https://danielseita.github.io/" class="black-link">Daniel Seita</a>
+                <br>
+                <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2026</em>
+                <br>
+                <a href="https://arxiv.org/abs/2604.25126">arXiv</a>
+                /
+                <a href="https://handful-dex.github.io/">project page</a>
+                /
+                <a href="https://www.youtube.com/watch?v=LDF8L490ZXs">video</a>
+                /
+                <a href="">code</a>
+                <p>HANDFUL tackles sequential grasp-conditioned dexterous manipulation tasks by treating finger use and in-hand space as a limited resource.</p>
+              </td>
+            </tr>
+
             <tr onmouseout="GD2P_stop()" onmouseover="GD2P_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div style="
@@ -664,8 +719,5 @@
         </td>
       </tr>
     </table>
-    <nav>
-      <a herf="CS698_teaching_video.html">CS698 Teaching Video and Write-up</a>
-    </nav>
   </body>
 </html>
