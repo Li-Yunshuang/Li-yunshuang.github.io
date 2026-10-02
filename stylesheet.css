@@ -899,7 +899,8 @@ body {
 /* Safari doesn't resolve % heights against an aspect-ratio height, so pin
    the thumbnail layers absolutely inside .one instead. */
 .publication-list .one > img,
-.publication-list .two {
+.publication-list .two,
+.publication-list .two video {
   position: absolute;
   top: 0;
   right: 0;
