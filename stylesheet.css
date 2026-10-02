@@ -904,6 +904,12 @@ body {
   object-fit: cover;
 }
 
+@media (hover: none) {
+  .publication-list .two {
+    opacity: 1 !important;
+  }
+}
+
 .paper-gallery {
   display: flex;
   align-items: stretch;
