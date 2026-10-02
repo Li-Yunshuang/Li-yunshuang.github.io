@@ -530,10 +530,16 @@ body {
 }
 
 .profile-header {
+  display: block;
   margin-bottom: 26px !important;
 }
 
+.profile-header > tbody {
+  display: block;
+}
+
 .profile-header tr {
+  display: grid;
   grid-template-columns: minmax(0, 1.8fr) minmax(190px, .72fr);
   gap: 52px;
 }
@@ -861,6 +867,12 @@ body {
   grid-template-columns: minmax(0, 160px) minmax(0, 1fr);
   align-items: center;
   column-gap: 26px;
+}
+
+.publication-list,
+.publication-list > tbody {
+  display: block;
+  width: 100%;
 }
 
 .publication-list > tbody > tr > td:first-child {
