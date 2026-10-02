@@ -896,6 +896,22 @@ body {
   overflow: hidden;
 }
 
+/* Safari doesn't resolve % heights against an aspect-ratio height, so pin
+   the thumbnail layers absolutely inside .one instead. */
+.publication-list .one > img,
+.publication-list .two {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+}
+
+.publication-list .two {
+  z-index: 1;
+}
+
 .publication-list .one > img,
 .publication-list .two video {
   display: block;
