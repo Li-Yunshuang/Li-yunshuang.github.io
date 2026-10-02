@@ -586,7 +586,8 @@ body {
   font-weight: 700;
 }
 
-.profile-copy p a[href="http://ckc.zju.edu.cn/ckcen/"] {
+.profile-copy p a[href="http://ckc.zju.edu.cn/ckcen/"],
+.profile-copy p a[href="https://www.grasp.upenn.edu/"] {
   text-decoration: none;
 }
 
