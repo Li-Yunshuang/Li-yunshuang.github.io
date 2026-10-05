@@ -18,7 +18,7 @@
     <meta name="author" content="Jon Barron">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261002-6">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261004-1">
     <link rel="icon" href="images/head_robo.png" type="image/png">
     <!--<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>"> -->
   </head>
@@ -88,6 +88,26 @@
             <a href="#media">Misc.</a>
           </nav>
           <hr style="border: none; border-top: 1px solid #ca0783; margin: 0px 0;">
+          <div class="highlight-gallery" aria-label="Research highlights">
+            <div class="highlight-tile" style="--ar: 960 / 540; flex-grow: 1.7778;">
+              <video src="highlights/06_chaining_blackshoe.mp4" preload="metadata" muted loop playsinline webkit-playsinline></video>
+            </div>
+            <div class="highlight-tile" style="--ar: 1920 / 1080; flex-grow: 1.7778;">
+              <video src="highlights/05_HANDFUL_Press1.mp4" preload="metadata" muted loop playsinline webkit-playsinline></video>
+            </div>
+            <div class="highlight-tile" style="--ar: 1920 / 1080; flex-grow: 1.7778;">
+              <video src="highlights/04_teaser_avo.mp4" preload="metadata" muted loop playsinline webkit-playsinline></video>
+            </div>
+            <div class="highlight-tile" style="--ar: 720 / 720; flex-grow: 1.0000;">
+              <video src="highlights/03_object6_chair1.mp4?v=2" preload="metadata" muted loop playsinline webkit-playsinline></video>
+            </div>
+            <div class="highlight-tile" style="--ar: 581 / 530; flex-grow: 1.0962;">
+              <video src="highlights/02_cloth_camera.mp4" preload="metadata" muted loop playsinline webkit-playsinline></video>
+            </div>
+            <div class="highlight-tile" style="--ar: 960 / 540; flex-grow: 1.7778;">
+              <video src="highlights/01_hodor-chaining.mp4" preload="metadata" muted loop playsinline webkit-playsinline></video>
+            </div>
+          </div>
           <table class="section-intro" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
@@ -110,6 +130,113 @@
             </tr>
           </tbody></table>
           <table class="publication-list" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr data-selected-publication="true" onmouseout="BIREPO_stop()" onmouseover="BIREPO_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div style="
+                margin-top:1px;
+                background-color:#ca0783;
+                color:white;
+                padding:1px 12px;
+                border-radius:7px;
+                text-align:center;
+                font-size:14px;">
+              Preprint
+              </div>
+                <div class="one">
+                  <div class="two" id='BIREPO'>
+                    <video width=100% height=100% muted autoplay loop playsinline webkit-playsinline style="width:100%; height:100%; object-fit: cover; object-position: center;">
+                    <source src="images/birepo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                  <img src='images/birepo.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function BIREPO_start(){
+                    document.getElementById('BIREPO').style.opacity = "1";
+                    document.querySelector('#BIREPO video').play().catch(function() {});
+                  }
+
+                  function BIREPO_stop() {
+                    document.getElementById('BIREPO').style.opacity = "0";
+                  }
+                  BIREPO_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://birepo.github.io/">
+                  <span class="papertitle">BiREPO: Learning Goal-Conditioned Bimanual Nonprehensile Pose Reconfiguration Primitives on Diverse Objects</span>
+                </a>
+                <br>
+                <a class="myself"><strong>Yunshuang Li</strong></a>*,
+                <a href="https://xinyi-yu.github.io/" class="black-link">Xinyi Yu</a>*,
+                <a class="black-link">Jason Chen</a>*,
+                <a class="black-link">Changyang Zhang</a>,
+                <a class="black-link">Faiz Aladin</a>,
+                <a href="https://uscresl.org/principal-investigator/" class="black-link">Gaurav Sukhatme</a>,
+                <a href="https://danielseita.github.io/" class="black-link">Daniel Seita</a>
+                <br>
+                <em>Under review, 2026</em>
+                <br>
+                <a href="">arXiv</a>
+                /
+                <a href="https://birepo.github.io/">project page</a>
+                /
+                <a href="">code</a>
+              </td>
+            </tr>
+
+            <tr onmouseout="ARMFUL_stop()" onmouseover="ARMFUL_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div style="
+                margin-top:1px;
+                background-color:#ca0783;
+                color:white;
+                padding:1px 12px;
+                border-radius:7px;
+                text-align:center;
+                font-size:14px;">
+              Preprint
+              </div>
+                <div class="one">
+                  <div class="two" id='ARMFUL'>
+                    <video width=100% height=100% muted autoplay loop playsinline webkit-playsinline style="width:100%; height:100%; object-fit: cover; object-position: center;">
+                    <source src="images/armful.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                  <img src='images/armful_.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function ARMFUL_start(){
+                    document.getElementById('ARMFUL').style.opacity = "1";
+                    document.querySelector('#ARMFUL video').play().catch(function() {});
+                  }
+
+                  function ARMFUL_stop() {
+                    document.getElementById('ARMFUL').style.opacity = "0";
+                  }
+                  ARMFUL_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://manipulation-armful.github.io/">
+                  <span class="papertitle">ARMFUL: Learning Whole-Arm Grasp Configurations for Single-Arm Pickup of Large Objects</span>
+                </a>
+                <br>
+                <a href="https://xinyi-yu.github.io/" class="black-link">Xinyi Yu</a>,
+                <a class="myself"><strong>Yunshuang Li</strong></a>,
+                <a href="https://danielseita.github.io/" class="black-link">Daniel Seita</a>,
+                <a href="https://uscresl.org/principal-investigator/" class="black-link">Gaurav Sukhatme</a>
+                <br>
+                <em>Under review, 2026</em>
+                <br>
+                <a href="">arXiv</a>
+                /
+                <a href="https://manipulation-armful.github.io/">project page</a>
+                /
+                <a href="">code</a>
+              </td>
+            </tr>
+
             <tr data-selected-publication="true" onmouseout="HANDFUL_stop()" onmouseover="HANDFUL_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div style="
@@ -125,10 +252,10 @@
                 <div class="one">
                   <div class="two" id='HANDFUL'>
                     <video width=100% height=100% muted autoplay loop playsinline webkit-playsinline style="width:100%; height:100%; object-fit: cover; object-position: center;">
-                    <source src="https://ethan-foong.github.io/images/HANDFUL_Video.mp4" type="video/mp4">
+                    <source src="images/handful.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                     </video></div>
-                  <img src='https://ethan-foong.github.io/images/benchmark_v3%20(1)-1.png' width="160">
+                  <img src='images/handful.png' width="160">
                 </div>
                 <script type="text/javascript">
                   function HANDFUL_start(){
@@ -806,5 +933,23 @@
         </td>
       </tr>
     </table>
+<script>
+  // Play highlight videos only once they approach the viewport.
+  (function() {
+    var videos = document.querySelectorAll('.highlight-gallery video');
+    if (!('IntersectionObserver' in window)) {
+      videos.forEach(function(video) { video.play().catch(function() {}); });
+      return;
+    }
+    var nearViewport = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (!entry.isIntersecting) return;
+        nearViewport.unobserve(entry.target);
+        entry.target.play().catch(function() {});
+      });
+    }, { rootMargin: '200px' });
+    videos.forEach(function(video) { nearViewport.observe(video); });
+  })();
+</script>
   </body>
 </html>
