@@ -123,9 +123,9 @@
                   <!-- My research focuses on robot learning for dexterous manipulation. I aim to enhance robotic capabilities under resource constraints by effectively leveraging diverse data sources and available physical resources. 
                   A key emphasis of my work is extending task horizons, enabling robots to perform long-horizon, multi-stage tasks and multitasking, as well as more delicate behaviors such as nonprehensile manipulation. Ultimately, my goal is to advance robotic manipulation toward human-level dexterity, enabling robots to learn, adapt, and interact with the physical world more effectively. -->
                   My research focuses on robot learning for dexterous manipulation. Specifically:<br>
-                  1. **Contact-Rich Manipulation:** Using wrench-based reasoning to ground physical interactions and integrating vision, force, and touch to learn robust manipulation policies.<br>
-                  2. **Whole-Body Dexterity:** Learning to coordinate contacts across fingers, palms, and arms for nonprehensile manipulation, and handling large objects.<br>
-                  3. **Structured Visual Representations:** Learning structured visual representations for long-horizon manipulation, including object-centric and task-oriented representations.
+                  - <b>Contact-Rich Manipulation:</b> Using wrench-based reasoning to ground physical interactions (<a href="#pub-birepo">BiREPO</a>) and integrating vision, force, and touch (<a href="#pub-im2contact">Im2Contact</a>) to learn robust manipulation policies.<br>
+                  - <b>Whole-Body Dexterity:</b> Learning to coordinate contacts across fingers, palms (<a href="#pub-gd2p">GD2P</a>, <a href="#pub-handful">HANDFUL</a>), and arms for nonprehensile manipulation, and handling large objects (<a href="#pub-armful">ARMFUL</a>).<br>
+                  - <b>Structured Visual Representations:</b> Learning structured visual representations for long-horizon manipulation (<a href="#pub-uvd">UVD</a>), including object-centric and task-oriented representations (<a href="#pub-hodor">HODOR</a>).
                 </p>
                 <p>
                   (* indicates equal contribution, † indicates equal advising)
@@ -134,7 +134,7 @@
             </tr>
           </tbody></table>
           <table class="publication-list" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr data-selected-publication="true" onmouseout="BIREPO_stop()" onmouseover="BIREPO_start()">
+            <tr id="pub-birepo" data-selected-publication="true" onmouseout="BIREPO_stop()" onmouseover="BIREPO_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div style="
                 margin-top:1px;
@@ -189,7 +189,7 @@
               </td>
             </tr>
 
-            <tr onmouseout="ARMFUL_stop()" onmouseover="ARMFUL_start()">
+            <tr id="pub-armful" onmouseout="ARMFUL_stop()" onmouseover="ARMFUL_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div style="
                 margin-top:1px;
@@ -241,7 +241,7 @@
               </td>
             </tr>
 
-            <tr data-selected-publication="true" onmouseout="HANDFUL_stop()" onmouseover="HANDFUL_start()">
+            <tr id="pub-handful" data-selected-publication="true" onmouseout="HANDFUL_stop()" onmouseover="HANDFUL_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div style="
                 margin-top:1px;
@@ -297,7 +297,7 @@
               </td>
             </tr>
 
-            <tr data-selected-publication="true" onmouseout="GD2P_stop()" onmouseover="GD2P_start()">
+            <tr id="pub-gd2p" data-selected-publication="true" onmouseout="GD2P_stop()" onmouseover="GD2P_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div style="
                 margin-top:1px;
@@ -356,7 +356,7 @@
               </td>
             </tr>
 
-            <tr onmouseout="hodor_stop()" onmouseover="hodor_start()">
+            <tr id="pub-hodor" onmouseout="hodor_stop()" onmouseover="hodor_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div style="
                 margin-top:1px;
@@ -461,7 +461,7 @@
               </td>
             </tr>
 
-            <tr data-selected-publication="true" onmouseout="UVD_stop()" onmouseover="UVD_start()">
+            <tr id="pub-uvd" data-selected-publication="true" onmouseout="UVD_stop()" onmouseover="UVD_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div style="
                 margin-top:1px;
@@ -573,7 +573,7 @@
               </td>
             </tr>
 
-            <tr onmouseout="im2contact_stop()" onmouseover="im2contact_start()">
+            <tr id="pub-im2contact" onmouseout="im2contact_stop()" onmouseover="im2contact_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div style="
                 margin-top:1px;
@@ -929,6 +929,16 @@
         filterButton.classList.toggle("is-active", isActive);
         filterButton.setAttribute("aria-pressed", String(isActive));
       });
+    });
+  });
+
+  // Paper links in the research intro: reveal the row if the "Selected" filter is hiding it.
+  document.querySelectorAll('a[href^="#pub-"]').forEach(function (link) {
+    link.addEventListener("click", function () {
+      var target = document.querySelector(link.getAttribute("href"));
+      if (target && target.hidden) {
+        document.querySelector('[data-publication-filter="all"]').click();
+      }
     });
   });
 })();

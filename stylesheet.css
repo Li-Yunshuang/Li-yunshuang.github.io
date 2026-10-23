@@ -1138,3 +1138,17 @@ body {
     height: 110px;
   }
 }
+
+/* Publication rows linked from the research intro. */
+.publication-list tr[id^="pub-"] {
+  scroll-margin-top: 24px;
+}
+
+.publication-list tr[id^="pub-"]:target {
+  animation: pub-target-flash 2s ease-out;
+}
+
+@keyframes pub-target-flash {
+  from { background-color: rgba(252, 150, 200, 0.25); }
+  to   { background-color: transparent; }
+}
